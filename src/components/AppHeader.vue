@@ -84,21 +84,40 @@ $dc_color:#0C7CEC;   // creo variabile per colore
         align-items: center;
         max-width: 1180px;
         margin: 0 auto;
+       
         
         
-    }
 
-    ul,li{
-        display: inline-block;
-        li{
+        
+        ul li{
+            display: inline-block;
+            border-bottom: 5px solid white;
             margin-right: 20px;
-            
+            text-transform: uppercase;
+            padding: 60px 5px;
+
+            a{
+                    font-size: 15px;
+                    font-weight: 600;
+                    text-decoration: none;
+                    color: black;
+                    
+            }
 
            
 
+            &:hover{
+                border-bottom: 5px solid #0C7CEC ;
+            }
+            
+            &:hover a{
+                color: #0C7CEC;
+            }
+        
+            }
+        
         }
-    
-    }
+
 
 
 </style>

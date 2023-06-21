@@ -4,12 +4,12 @@ export default {
 }
 </script>
 <template>
-    <div>
-        <div class="jumbotron">
-            <div class="container">
-                <h1>-- Content goes here --</h1>
-            </div>
+    <div class="jumbotron">
+        
+        <div class="container">
+            <h1>-- Content goes here --</h1>
         </div>
+        
         
     </div>
 </template>
