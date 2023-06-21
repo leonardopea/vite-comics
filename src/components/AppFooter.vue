@@ -9,23 +9,23 @@ export default {
         <div class="container">
                 <div class="row_flex">
                     <div class="col">
-                        <!-- <img src="../assets/img/buy-comics-digital-comics.png" alt=""> -->
+                        <img src="../assets/img/buy-comics-digital-comics.png" alt=""> 
                         <p>digital comics</p>
                     </div>
                     <div class="col">
-                        <!-- <img src="../assets/img/buy-comics-merchandise.png" alt=""> -->
+                        <img src="../assets/img/buy-comics-merchandise.png" alt="">
                         <p>dc merchandise</p>
                     </div>
                     <div class="col">
-                        <!-- <img src="../assets/img/buy-comics-subscriptions.png" alt=""> -->
+                        <img src="../assets/img/buy-comics-subscriptions.png" alt=""> 
                         <p>subscription</p>
                     </div>
                     <div class="col">
-                        <!-- <img src="../assets/img/buy-comics-shop-locator.png" alt=""> -->
+                        <img src="../assets/img/buy-comics-shop-locator.png" alt="">
                         <p>comic shop locator</p>
                     </div>
                     <div class="col">
-                        <!-- <img src="../assets/img/buy-dc-power-visa.svg" alt=""> -->
+                        <img src="../assets/img/buy-dc-power-visa.svg" alt="">
                         <p>dc power visa</p>
                     </div>
                 </div>
@@ -40,7 +40,7 @@ export default {
 
         .container{
 
-            max-width: 980px;
+            max-width: 1050px;
             margin: 0 auto;
         
 
@@ -54,16 +54,23 @@ export default {
                     margin-top: 20px;
                     margin-bottom:20px;
                     width: calc(100% / 5);
+                    justify-content: center;
+                    align-items: center;
+                    
                     
 
                     p{
                         text-transform: uppercase;
                         color: white;
+                        padding-left: 15px;
+                        font-size: 12px;
                     }
 
                     img{
                         width: 20%;
                     }
+
+            
                 }
             }
 
