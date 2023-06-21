@@ -98,6 +98,30 @@ export default {
             </div>
         </div>
     </div>
+
+    <div class="jumbotron_button">
+        <div class="container_button">
+            <div class="row_button">
+                <div class="col">
+                    <button> 
+                        <h2>SIGN-UP NOW!</h2>
+                    </button>
+                </div>
+                <div class="col_logos">
+                    <h2 class="follow_us">FOLLOW US</h2>
+                    <a href="#"><img src="../assets/img/footer-facebook.png" alt=""></a>
+                    <a href="#"><img src="../assets/img/footer-twitter.png" alt=""></a>
+                    <a href="#"><img src="../assets/img/footer-youtube.png" alt=""></a>
+                    <a href="#"><img src="../assets/img/footer-pinterest.png" alt=""></a>
+                    <a href="#"><img src="../assets/img/footer-periscope.png" alt="">></a>
+                    
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
             
             
                
@@ -197,6 +221,57 @@ export default {
             }
         }
 
+    }
+
+    .jumbotron_button{
+        background-color: rgb(67, 61, 61);
+        
+        .container_button{
+            max-width: 1180px;
+            margin: 0 auto;
+
+
+            .row_button{
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+
+
+                .col_logos{
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                }
+
+
+
+                button{
+                    margin: 50px 0;
+                    padding: 20px;
+                    background-color: rgb(67, 61, 61) ;
+                    color: white;
+                    border: 2px solid #0C7CEC;
+                    cursor: pointer;
+
+
+                    &:active{
+                    background-color: rgb(44, 40, 40);
+                    border: 2px solid #073b70;
+                    color: rgb(192, 189, 189);
+                    }
+                }
+
+                
+
+                .follow_us{
+                    color: #0C7CEC;
+                    
+                }
+            }
+
+
+            
+        }
     }
     
     
