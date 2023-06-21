@@ -74,24 +74,30 @@ export default {
 
 <style lang="scss" scoped>
 
+
 $dc_color:#0C7CEC;   // creo variabile per colore 
 
 
     .jumbotron{
         display: flex;
+        justify-content: space-between;
         align-items: center;
-        justify-content: center;
+        max-width: 1180px;
+        margin: 0 auto;
+        
         
     }
 
-    ul{
+    ul,li{
         display: inline-block;
-
         li{
-            display: inline-block;
             margin-right: 20px;
+            
+
+           
 
         }
+    
     }
 
 
