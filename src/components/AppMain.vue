@@ -1,5 +1,9 @@
 <script>
+import card from './card.vue';
 export default {
+    components:{
+        card
+    },
     data() {
         return {
             comics:[
@@ -87,11 +91,7 @@ export default {
 
             <div  class="flex flex-wrap" >
                 
-                <div class="cards" v-for="(comic, index) in comics" :key="index">
-                    <img  :src="comic.thumb" alt="">
-                    <h1>{{ comic.series }}</h1>
-                    
-                </div>
+               <card v-for="(comic,index) in comics" :key="index" :image="comic.thumb" :subtitle="comic.series" />
                 
                 
 
@@ -110,31 +110,15 @@ export default {
 @use '../../styles/generals.scss' as *;
 
     .jumbotron{
-        background-color: rgb(0, 0, 0);
-    }
+        background-color: rgb(0, 0, 0)    }
 
     .container{
         max-width: 1180px;
         margin: 0 auto;
-
-
-        .cards{
-            width: calc(100% / 6 - 20px );
-            margin: 10px;
-            
-        }
-
-        img{
-            width: 100%;
-            height: 80%;
-        }
-
-
-        h1{
-            color: white;
-            font-size: 15px;
-        }
-        
-        
     }
+
+
+              
+        
+    
 </style>
