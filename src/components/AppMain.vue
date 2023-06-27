@@ -89,7 +89,7 @@ export default {
         
         <div class="container">
 
-            <div  class="flex flex-wrap" >
+            <div  class="d-flex flex-wrap" >
                 
                <card v-for="(comic,index) in comics" :key="index" :image="comic.thumb" :subtitle="comic.series" />
                 
