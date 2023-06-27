@@ -84,8 +84,19 @@ export default {
     <section class="jumbotron">
         
         <div class="container">
-            <div class="flex flex-wrap">
-                <div class="cards" v-for="(comic, index) in comics" :key="index" >{{ comic.series}}</div>
+
+            <div  class="flex flex-wrap" >
+                
+                <div class="cards" v-for="(comic, index) in comics" :key="index">
+                    <img  :src="comic.thumb" alt="">
+                    <h1>{{ comic.series }}</h1>
+                    
+                </div>
+                
+                
+
+               
+                
             </div>
             
         </div>
@@ -99,7 +110,7 @@ export default {
 @use '../../styles/generals.scss' as *;
 
     .jumbotron{
-        background-color: rgb(156, 148, 148);
+        background-color: rgb(0, 0, 0);
     }
 
     .container{
@@ -108,7 +119,20 @@ export default {
 
 
         .cards{
-            width: calc(100% / 6 - 20px);
+            width: calc(100% / 6 - 20px );
+            margin: 10px;
+            
+        }
+
+        img{
+            width: 100%;
+            height: 80%;
+        }
+
+
+        h1{
+            color: white;
+            font-size: 15px;
         }
         
         
